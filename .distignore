@@ -1,0 +1,19 @@
+# Excluded from the installable ZIP (see bin/build-zip.sh).
+.git
+.github
+.gitignore
+.distignore
+.editorconfig
+.phpunit.result.cache
+bin
+composer.json
+composer.lock
+dist
+docs
+examples
+node_modules
+phpunit.xml.dist
+tests
+vendor
+*.zip
+*.log

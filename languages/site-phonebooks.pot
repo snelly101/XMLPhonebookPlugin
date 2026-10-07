@@ -1,0 +1,1909 @@
+# Copyright (C) 2026 Snelson Server
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Site Phonebooks 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/snelly101/XMLPhonebookPlugin/issues\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-07T18:56:02+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: site-phonebooks\n"
+
+#. Plugin Name of the plugin
+#: site-phonebooks.php
+msgid "Site Phonebooks"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: site-phonebooks.php
+msgid "https://github.com/snelly101/XMLPhonebookPlugin"
+msgstr ""
+
+#. Description of the plugin
+#: site-phonebooks.php
+msgid "Centrally manage multiple site-specific phonebooks and serve each one as a Yealink-compatible XML remote phonebook feed."
+msgstr ""
+
+#. Author of the plugin
+#: site-phonebooks.php
+msgid "Snelson Server"
+msgstr ""
+
+#: includes/admin/class-actions.php:94
+#: includes/admin/class-actions.php:596
+#: includes/class-phonebook-repository.php:277
+#: includes/import/class-import-committer.php:65
+msgid "Phonebook not found."
+msgstr ""
+
+#. translators: %s: feed file name
+#: includes/admin/class-actions.php:138
+#, php-format
+msgid "Phonebook created. Its feed file is %s. Add contacts or import a file, then copy the feed URL into your handsets."
+msgstr ""
+
+#: includes/admin/class-actions.php:157
+msgid "Details saved. The feed address is unchanged."
+msgstr ""
+
+#: includes/admin/class-actions.php:168
+msgid "Tick the confirmation box to change the feed file name."
+msgstr ""
+
+#: includes/admin/class-actions.php:173
+msgid "The file name is unchanged."
+msgstr ""
+
+#. translators: 1: old file, 2: new file
+#: includes/admin/class-actions.php:181
+#, php-format
+msgid "Feed file renamed from %1$s to %2$s. Update every handset that uses the old address."
+msgstr ""
+
+#: includes/admin/class-actions.php:192
+msgid "The site name you typed does not match. The phonebook was not deleted."
+msgstr ""
+
+#. translators: %s: site name
+#: includes/admin/class-actions.php:197
+#, php-format
+msgid "Phonebook \"%s\" deleted."
+msgstr ""
+
+#: includes/admin/class-actions.php:200
+msgid "The phonebook could not be deleted."
+msgstr ""
+
+#: includes/admin/class-actions.php:217
+msgid "The feed is now public: anyone who knows the address can read it. The key is no longer required."
+msgstr ""
+
+#: includes/admin/class-actions.php:217
+msgid "The feed now requires its key. Update handsets that were using the public address."
+msgstr ""
+
+#: includes/admin/class-actions.php:221
+msgid "Feed enabled."
+msgstr ""
+
+#: includes/admin/class-actions.php:221
+msgid "Feed disabled. Requests now receive 404 and no contact data."
+msgstr ""
+
+#: includes/admin/class-actions.php:224
+msgid "Access settings saved."
+msgstr ""
+
+#: includes/admin/class-actions.php:235
+msgid "A new key was generated. The previous feed address no longer works; copy the new address into every handset."
+msgstr ""
+
+#: includes/admin/class-actions.php:237
+msgid "The key could not be rotated."
+msgstr ""
+
+#: includes/admin/class-actions.php:255
+msgid "Contact saved. The feed now includes the change."
+msgstr ""
+
+#. translators: %s: contact name
+#: includes/admin/class-actions.php:259
+#, php-format
+msgid "Contact \"%s\" added."
+msgstr ""
+
+#: includes/admin/class-actions.php:276
+msgid "Contact deleted."
+msgstr ""
+
+#: includes/admin/class-actions.php:276
+#: includes/class-contact-repository.php:197
+msgid "Contact not found."
+msgstr ""
+
+#: includes/admin/class-actions.php:288
+msgid "Select contacts and the \"Delete selected\" action first."
+msgstr ""
+
+#: includes/admin/class-actions.php:311
+msgid "Nothing to delete: the selection expired. Select the contacts again."
+msgstr ""
+
+#: includes/admin/class-actions.php:325
+msgid "The contacts could not be deleted; nothing was changed."
+msgstr ""
+
+#. translators: %s: number deleted
+#: includes/admin/class-actions.php:330
+#, php-format
+msgid "%s contact deleted. A snapshot was saved first."
+msgid_plural "%s contacts deleted. A snapshot was saved first."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/class-actions.php:340
+msgid "Tick the confirmation box to clear the phonebook."
+msgstr ""
+
+#: includes/admin/class-actions.php:355
+msgid "The phonebook could not be cleared; nothing was changed."
+msgstr ""
+
+#: includes/admin/class-actions.php:360
+msgid "All contacts removed. The feed is now empty. Restore the previous list from Export & snapshots if needed."
+msgstr ""
+
+#: includes/admin/class-actions.php:373
+msgid "Choose a file to upload."
+msgstr ""
+
+#: includes/admin/class-actions.php:377
+msgid "The file is larger than the upload limit."
+msgstr ""
+
+#: includes/admin/class-actions.php:377
+msgid "The upload failed. Try again."
+msgstr ""
+
+#. translators: %s: size
+#: includes/admin/class-actions.php:383
+#, php-format
+msgid "The file is larger than the %s limit set in Phonebooks > Settings."
+msgstr ""
+
+#: includes/admin/class-actions.php:389
+msgid "The uploaded file is empty."
+msgstr ""
+
+#: includes/admin/class-actions.php:433
+msgid "That staged import is no longer available. Upload the file again."
+msgstr ""
+
+#. translators: 1: added, 2: removed
+#: includes/admin/class-actions.php:488
+#, php-format
+msgid "Import applied: %1$s contacts added, %2$s removed. A snapshot of the previous list is available under Export & snapshots. The feed now serves the new list."
+msgstr ""
+
+#. translators: %s: added
+#: includes/admin/class-actions.php:491
+#, php-format
+msgid "Import applied: %s contacts added. The feed now serves the updated list."
+msgstr ""
+
+#: includes/admin/class-actions.php:504
+msgid "Upload discarded. Nothing was changed."
+msgstr ""
+
+#: includes/admin/class-actions.php:558
+msgid "Snapshot saved."
+msgstr ""
+
+#: includes/admin/class-actions.php:560
+msgid "The snapshot could not be saved."
+msgstr ""
+
+#: includes/admin/class-actions.php:574
+msgid "Snapshot restored. The feed now serves the restored list; the list it replaced was snapshotted first."
+msgstr ""
+
+#: includes/admin/class-actions.php:585
+msgid "Snapshot deleted."
+msgstr ""
+
+#: includes/admin/class-actions.php:585
+#: includes/class-revision-repository.php:171
+msgid "Snapshot not found."
+msgstr ""
+
+#. translators: 1: site name, 2: result
+#: includes/admin/class-actions.php:601
+#, php-format
+msgid "Self-test for \"%1$s\": %2$s"
+msgstr ""
+
+#: includes/admin/class-admin.php:79
+#: includes/admin/class-admin.php:118
+#: includes/admin/class-list-screen.php:47
+#: includes/class-diagnostics.php:71
+msgid "Phonebooks"
+msgstr ""
+
+#: includes/admin/class-admin.php:80
+msgid "All Phonebooks"
+msgstr ""
+
+#: includes/admin/class-admin.php:81
+#: includes/admin/class-list-screen.php:48
+#: includes/admin/class-phonebook-screen.php:125
+msgid "Add Phonebook"
+msgstr ""
+
+#: includes/admin/class-admin.php:82
+#: includes/admin/class-settings-screen.php:44
+msgid "Phonebook Settings"
+msgstr ""
+
+#: includes/admin/class-admin.php:82
+#: includes/admin/class-phonebook-screen.php:35
+msgid "Settings"
+msgstr ""
+
+#: includes/admin/class-admin.php:83
+#: includes/admin/class-help-screen.php:39
+msgid "Help & Diagnostics"
+msgstr ""
+
+#: includes/admin/class-admin.php:103
+msgid "Copied"
+msgstr ""
+
+#: includes/admin/class-admin.php:104
+msgid "Copy failed. Select the text and copy it manually."
+msgstr ""
+
+#: includes/admin/class-admin.php:105
+#: includes/admin/class-phonebook-screen.php:196
+#: includes/admin/class-phonebook-screen.php:440
+#: includes/admin/class-phonebook-screen.php:449
+#: includes/admin/class-phonebook-screen.php:455
+#: includes/admin/class-phonebook-screen.php:465
+msgid "Copy"
+msgstr ""
+
+#: includes/admin/class-admin.php:106
+msgid "Working…"
+msgstr ""
+
+#: includes/admin/class-admin.php:126
+msgid "You do not have permission to manage phonebooks."
+msgstr ""
+
+#. translators: %s: human time difference
+#: includes/admin/class-admin.php:161
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#: includes/admin/class-contacts-list-table.php:62
+#: includes/admin/class-import-screen.php:396
+#: includes/admin/class-phonebook-screen.php:407
+msgid "Name"
+msgstr ""
+
+#: includes/admin/class-contacts-list-table.php:63
+#: includes/admin/class-import-screen.php:396
+#: includes/admin/class-phonebook-screen.php:274
+#: includes/admin/class-phonebook-screen.php:407
+msgid "Telephone"
+msgstr ""
+
+#: includes/admin/class-contacts-list-table.php:64
+msgid "Notes (internal)"
+msgstr ""
+
+#: includes/admin/class-contacts-list-table.php:65
+#: includes/admin/class-phonebooks-list-table.php:49
+msgid "Updated"
+msgstr ""
+
+#: includes/admin/class-contacts-list-table.php:125
+msgid "Select bulk action"
+msgstr ""
+
+#: includes/admin/class-contacts-list-table.php:127
+msgid "Bulk actions"
+msgstr ""
+
+#: includes/admin/class-contacts-list-table.php:128
+msgid "Delete selected"
+msgstr ""
+
+#: includes/admin/class-contacts-list-table.php:130
+msgid "Apply"
+msgstr ""
+
+#: includes/admin/class-contacts-list-table.php:139
+msgid "No contacts match your search."
+msgstr ""
+
+#. translators: %s: Import link
+#: includes/admin/class-contacts-list-table.php:144
+#, php-format
+msgid "This phonebook has no contacts yet. Add one above or %s."
+msgstr ""
+
+#: includes/admin/class-contacts-list-table.php:145
+msgid "import a CSV or XML file"
+msgstr ""
+
+#. translators: %s: contact name
+#: includes/admin/class-contacts-list-table.php:160
+#, php-format
+msgid "Select %s"
+msgstr ""
+
+#. translators: %s: contact name
+#: includes/admin/class-contacts-list-table.php:173
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#. translators: %s: contact name
+#: includes/admin/class-contacts-list-table.php:173
+msgid "Edit"
+msgstr ""
+
+#. translators: %s: contact name
+#: includes/admin/class-contacts-list-table.php:174
+#, php-format
+msgid "Delete \"%s\" from this phonebook?"
+msgstr ""
+
+#. translators: %s: contact name
+#: includes/admin/class-contacts-list-table.php:174
+#, php-format
+msgid "Delete %s"
+msgstr ""
+
+#. translators: %s: contact name
+#: includes/admin/class-contacts-list-table.php:174
+#: includes/admin/class-phonebook-screen.php:390
+msgid "Delete"
+msgstr ""
+
+#: includes/admin/class-help-screen.php:44
+msgid "Environment checks"
+msgstr ""
+
+#: includes/admin/class-help-screen.php:46
+msgid "Check"
+msgstr ""
+
+#: includes/admin/class-help-screen.php:46
+#: includes/admin/class-import-screen.php:396
+#: includes/admin/class-phonebook-screen.php:511
+msgid "Result"
+msgstr ""
+
+#: includes/admin/class-help-screen.php:59
+msgid "Server self-test"
+msgstr ""
+
+#: includes/admin/class-help-screen.php:60
+msgid "Asks this server to fetch one of its own feeds (HEAD request with the phonebook's key). It verifies routing, permalinks and access settings on the server. It cannot tell you whether a handset on another network, behind a firewall or with its own TLS trust store can reach the feed – verify that on the phone."
+msgstr ""
+
+#: includes/admin/class-help-screen.php:62
+msgid "Create a phonebook first."
+msgstr ""
+
+#: includes/admin/class-help-screen.php:67
+msgid "Phonebook to test"
+msgstr ""
+
+#: includes/admin/class-help-screen.php:73
+msgid "Run self-test"
+msgstr ""
+
+#: includes/admin/class-help-screen.php:79
+msgid "Setting up a Yealink handset"
+msgstr ""
+
+#: includes/admin/class-help-screen.php:81
+msgid "Open the phonebook in WordPress and copy its feed URL (Feed & access tab)."
+msgstr ""
+
+#: includes/admin/class-help-screen.php:82
+msgid "In the phone's web interface go to Directory > Remote Phone Book (the exact menu depends on model and firmware; on some models it is Directory > Remote Phonebook or Settings > Remote Phone Book)."
+msgstr ""
+
+#: includes/admin/class-help-screen.php:83
+msgid "Paste the URL into a Remote URL field and give it a display name. Save."
+msgstr ""
+
+#: includes/admin/class-help-screen.php:84
+msgid "On the handset, open Directory > Remote Phone Book to confirm the contacts appear."
+msgstr ""
+
+#: includes/admin/class-help-screen.php:86
+msgid "Handsets fetch the feed on their own schedule (often when the directory is opened, or at a configurable refresh interval). Updates made in WordPress appear after the next fetch; the plugin cannot push to phones. Support for HTTPS, query-string keys, the number of remote phonebooks and contact capacity differ between models and firmware versions – verify with one phone before rolling out."
+msgstr ""
+
+#: includes/admin/class-help-screen.php:90
+msgid "XML format"
+msgstr ""
+
+#: includes/admin/class-help-screen.php:91
+msgid "Feeds use the structure of the owner's known-working file. The title is the site name; each contact is one entry with one name and one number."
+msgstr ""
+
+#: includes/admin/class-help-screen.php:101
+msgid "Files in this format can also be imported. Other manufacturer formats are not supported yet."
+msgstr ""
+
+#: includes/admin/class-help-screen.php:106
+#: includes/admin/class-import-screen.php:100
+msgid "CSV template"
+msgstr ""
+
+#: includes/admin/class-help-screen.php:107
+#: includes/admin/class-import-screen.php:101
+msgid "Download template"
+msgstr ""
+
+#: includes/admin/class-help-screen.php:108
+msgid "Save files as UTF-8. Keep telephone columns formatted as Text so leading zeros survive."
+msgstr ""
+
+#: includes/admin/class-help-screen.php:111
+msgid "Feed address forms"
+msgstr ""
+
+#: includes/admin/class-help-screen.php:112
+msgid "Protected (secret URL):"
+msgstr ""
+
+#: includes/admin/class-help-screen.php:115
+msgid "Public:"
+msgstr ""
+
+#: includes/admin/class-help-screen.php:117
+msgid "Without pretty permalinks:"
+msgstr ""
+
+#: includes/admin/class-help-screen.php:121
+msgid "Caches, CDNs and security plugins"
+msgstr ""
+
+#. translators: %s: path
+#: includes/admin/class-help-screen.php:122
+#, php-format
+msgid "Exclude /%s/ and the spb_feed query parameter from page caching, CDN caching, bot protection and login-redirect rules. Cached copies would bypass key checks and key rotation."
+msgstr ""
+
+#: includes/admin/class-help-screen.php:125
+msgid "Data retention"
+msgstr ""
+
+#: includes/admin/class-help-screen.php:126
+msgid "Deactivating keeps all data. Uninstalling keeps data unless \"Delete all data on uninstall\" is enabled in Settings. Only administrators can manage phonebooks (capability manage_site_phonebooks)."
+msgstr ""
+
+#: includes/admin/class-import-screen.php:39
+msgid "That staged import is no longer available (it expired, was cancelled or was applied). Upload the file again."
+msgstr ""
+
+#: includes/admin/class-import-screen.php:66
+msgid "Upload a CSV or XML file"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:67
+msgid "Nothing changes until you review the preview and confirm. You will be able to choose which columns hold the name and telephone, and whether to merge into or replace the current list."
+msgstr ""
+
+#: includes/admin/class-import-screen.php:74
+msgid "File"
+msgstr ""
+
+#. translators: 1: max file size in KB, 2: max rows
+#: includes/admin/class-import-screen.php:76
+#, php-format
+msgid "CSV (comma, semicolon or tab separated, UTF-8) or Yealink XML. Up to %1$s KB and %2$s rows."
+msgstr ""
+
+#: includes/admin/class-import-screen.php:78
+msgid "Upload and continue"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:83
+msgid "Imports in progress"
+msgstr ""
+
+#. translators: 1: status, 2: expiry
+#: includes/admin/class-import-screen.php:88
+#, php-format
+msgid "%1$s · expires %2$s"
+msgstr ""
+
+#. translators: 1: status, 2: expiry
+#: includes/admin/class-import-screen.php:88
+msgid "previewed"
+msgstr ""
+
+#. translators: 1: status, 2: expiry
+#: includes/admin/class-import-screen.php:88
+msgid "uploaded"
+msgstr ""
+
+#. translators: 1: status, 2: expiry
+#: includes/admin/class-import-screen.php:89
+msgid "Continue"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:106
+msgid "Other headers are fine; you map columns in the next step. An optional Notes column is kept internally and never published."
+msgstr ""
+
+#: includes/admin/class-import-screen.php:109
+msgid "Leading zeros"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:110
+msgid "Spreadsheet software often converts \"0001\" to \"1\" and \"+441234\" to a number when it opens a CSV. The plugin keeps telephone text exactly as it is in the uploaded file, but it cannot restore digits that were already lost. Format telephone columns as Text before saving."
+msgstr ""
+
+#: includes/admin/class-import-screen.php:143
+msgid "Discard upload"
+msgstr ""
+
+#. translators: %s: file name
+#: includes/admin/class-import-screen.php:160
+#, php-format
+msgid "Step 2 of 3: options for %s"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:174
+msgid "How to apply the file"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:175
+msgid "Merge"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:175
+msgid "add new contacts and keep every existing one. Rows whose name and telephone exactly match an existing contact are skipped. A matching name with a different number becomes a separate contact; this mode does not detect number changes (edit those manually or use Replace)."
+msgstr ""
+
+#: includes/admin/class-import-screen.php:176
+msgid "Replace"
+msgstr ""
+
+#. translators: %s: current contact count
+#: includes/admin/class-import-screen.php:176
+#, php-format
+msgid "the file becomes the complete list. Existing contacts that are not in the file are removed (currently %s contacts). A snapshot is taken first and you must confirm on the preview."
+msgstr ""
+
+#. translators: %s: current contact count
+#: includes/admin/class-import-screen.php:177
+msgid "Import valid rows only: skip rows with errors instead of blocking the whole import. The preview will show exactly which rows are skipped."
+msgstr ""
+
+#: includes/admin/class-import-screen.php:180
+msgid "Build preview"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:217
+msgid "Comma (,)"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:218
+msgid "Semicolon (;)"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:219
+msgid "Tab"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:223
+msgid "File format"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:225
+msgid "Text encoding"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:227
+msgid "UTF-8 (recommended; UTF-16 with BOM is detected automatically)"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:228
+msgid "Windows-1252 (legacy Excel on Windows)"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:229
+msgid "ISO-8859-1 (Latin-1)"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:233
+msgid "Column separator"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:236
+msgid "(detected)"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:240
+msgid "The first row is a header, not a contact"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:241
+msgid "Change any of these and choose \"Build preview\" to re-read the file with the new settings."
+msgstr ""
+
+#: includes/admin/class-import-screen.php:245
+msgid "First rows of the file"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:259
+msgid "Column mapping"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:260
+msgid "Name column"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:260
+msgid "Telephone column"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:260
+msgid "Notes column (optional, internal)"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:264
+msgid "— none —"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:264
+msgid "— choose —"
+msgstr ""
+
+#. translators: %d: column number
+#: includes/admin/class-import-screen.php:285
+#, php-format
+msgid "Column %d"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:303
+msgid "XML file"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:305
+msgid "Title"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:305
+msgid "(none)"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:306
+msgid "Entries"
+msgstr ""
+
+#. translators: %s: XML title
+#: includes/admin/class-import-screen.php:309
+#, php-format
+msgid "Rename this phonebook to \"%s\" (the XML title). The feed address does not change."
+msgstr ""
+
+#: includes/admin/class-import-screen.php:331
+msgid "Will be added"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:332
+msgid "Already exists (kept)"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:333
+msgid "Duplicate in file (skipped)"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:334
+msgid "Invalid (skipped)"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:334
+msgid "Invalid (blocks import)"
+msgstr ""
+
+#. translators: %s: file name
+#: includes/admin/class-import-screen.php:347
+#, php-format
+msgid "Step 3 of 3: preview of %s"
+msgstr ""
+
+#. translators: %s: file name
+#: includes/admin/class-import-screen.php:348
+msgid "Mode: Replace — the file becomes the complete contact list."
+msgstr ""
+
+#. translators: %s: file name
+#: includes/admin/class-import-screen.php:348
+msgid "Mode: Merge — new contacts are added, existing contacts are kept."
+msgstr ""
+
+#. translators: %s: file name
+#: includes/admin/class-import-screen.php:348
+msgid "The live phonebook has not been changed yet."
+msgstr ""
+
+#: includes/admin/class-import-screen.php:351
+msgid "The phonebook changed after this preview was built (someone added, edited or imported contacts). Build a fresh preview before applying."
+msgstr ""
+
+#: includes/admin/class-import-screen.php:357
+msgid "Import summary"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:358
+msgid "rows in file"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:359
+msgid "to add"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:360
+msgid "existing kept (in file)"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:360
+msgid "existing kept"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:361
+msgid "duplicates skipped"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:363
+msgid "existing to remove"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:365
+msgid "invalid rows"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:366
+msgid "contacts after import"
+msgstr ""
+
+#. translators: %s: new name
+#: includes/admin/class-import-screen.php:369
+#, php-format
+msgid "The phonebook will be renamed to \"%s\"."
+msgstr ""
+
+#. translators: %s: number removed
+#: includes/admin/class-import-screen.php:378
+#, php-format
+msgid "I understand %s existing contact will be removed from the feed."
+msgid_plural "I understand %s existing contacts will be removed from the feed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/class-import-screen.php:381
+msgid "Apply import and replace contacts"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:381
+msgid "Apply import"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:382
+msgid "Back to options"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:390
+msgid "Rows"
+msgstr ""
+
+#. translators: 1: shown, 2: total
+#: includes/admin/class-import-screen.php:392
+#, php-format
+msgid "Showing the first %1$s of %2$s rows (invalid rows first). The counts above cover every row."
+msgstr ""
+
+#: includes/admin/class-import-screen.php:396
+msgid "Row"
+msgstr ""
+
+#: includes/admin/class-import-screen.php:396
+msgid "Messages"
+msgstr ""
+
+#: includes/admin/class-list-screen.php:29
+msgid "Overview"
+msgstr ""
+
+#: includes/admin/class-list-screen.php:30
+msgid "Each phonebook serves one site (customer, building or office) and has its own XML feed URL. Open a phonebook to manage its contacts, import files and copy the feed address into your handsets."
+msgstr ""
+
+#: includes/admin/class-list-screen.php:53
+msgid "Search phonebooks"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:31
+#: includes/admin/class-phonebook-screen.php:181
+#: includes/admin/class-phonebook-screen.php:369
+#: includes/admin/class-phonebooks-list-table.php:47
+msgid "Contacts"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:32
+#: includes/admin/class-phonebooks-list-table.php:122
+msgid "Import"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:33
+msgid "Export & snapshots"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:34
+#: includes/admin/class-phonebooks-list-table.php:123
+msgid "Feed & access"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:69
+msgid "Phonebook not found"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:69
+msgid "Back to all phonebooks"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:85
+msgid "All phonebooks"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:89
+msgid "Phonebook sections"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:127
+msgid "A phonebook serves one site. Its name becomes the title shown on handsets and is used to generate a permanent feed address."
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:133
+#: includes/admin/class-phonebook-screen.php:569
+#: includes/admin/class-phonebooks-list-table.php:45
+msgid "Site name"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:136
+msgid "Must be unique. Example: \"Frickley Mews\". The feed file will be named from it, e.g. frickley-mews.xml."
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:140
+#: includes/admin/class-phonebook-screen.php:576
+msgid "Internal description"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:143
+msgid "Optional. Only shown in WordPress, never on handsets."
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:147
+#: includes/admin/class-phonebook-screen.php:150
+msgid "Feed access"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:151
+msgid "Secret URL (recommended): the feed address contains a private key."
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:152
+msgid "Public: anyone who knows the address can read the contacts."
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:157
+msgid "Create phonebook"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:171
+msgid "Phonebook summary"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:173
+#: includes/admin/class-phonebooks-list-table.php:48
+msgid "Status"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:175
+msgid "Feed enabled"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:177
+msgid "Feed disabled"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:185
+msgid "Last content update"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:189
+msgid "Last feed request seen"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:190
+msgid "none yet"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:193
+#: includes/admin/class-phonebook-screen.php:437
+msgid "Feed URL"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:238
+msgid "Search contacts"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:240
+msgid "Search name, number or notes"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:241
+msgid "Search"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:259
+msgid "Contacts are published in the XML feed sorted by name, then telephone. Notes are internal and never appear in the feed."
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:263
+msgid "Edit contact"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:263
+#: includes/admin/class-phonebook-screen.php:283
+msgid "Add contact"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:270
+msgid "Display name"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:276
+msgid "Stored exactly as typed (leading zeros and + are kept)."
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:279
+msgid "Internal notes"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:283
+msgid "Save changes"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:285
+#: includes/admin/class-phonebook-screen.php:328
+msgid "Cancel"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:292
+msgid "Clear phonebook"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:293
+msgid "Removes every contact. A snapshot is taken first so the list can be restored from Export & snapshots."
+msgstr ""
+
+#. translators: %s: number of contacts
+#: includes/admin/class-phonebook-screen.php:298
+#, php-format
+msgid "I understand %s contact will be removed from the feed."
+msgid_plural "I understand %s contacts will be removed from the feed."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of contacts
+#: includes/admin/class-phonebook-screen.php:299
+msgid "Remove all contacts from this phonebook?"
+msgstr ""
+
+#. translators: %s: number of contacts
+#: includes/admin/class-phonebook-screen.php:299
+msgid "Clear all contacts"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:321
+msgid "Confirm bulk delete"
+msgstr ""
+
+#. translators: %s: number of contacts
+#: includes/admin/class-phonebook-screen.php:322
+#, php-format
+msgid "Delete %s selected contact? A snapshot is taken first."
+msgid_plural "Delete %s selected contacts? A snapshot is taken first."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/class-phonebook-screen.php:327
+msgid "Yes, delete them"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:348
+msgid "Download"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:350
+msgid "Download XML"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:351
+msgid "Download CSV"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:353
+msgid "The XML download is identical to the feed. The CSV contains Name, Telephone and Notes; values that spreadsheets could run as formulas are prefixed with an apostrophe, which the importer removes again. Spreadsheet software may strip leading zeros when it opens a CSV; the file itself keeps them."
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:357
+msgid "Snapshots"
+msgstr ""
+
+#. translators: %d: retention count
+#: includes/admin/class-phonebook-screen.php:358
+#, php-format
+msgid "A snapshot of the contact list is taken automatically before replace imports, bulk deletes, clears and restores. The newest %d snapshots are kept per phonebook (Phonebooks > Settings)."
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:363
+msgid "Take a snapshot now"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:366
+msgid "No snapshots yet."
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:369
+msgid "Taken"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:369
+msgid "Reason"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:369
+msgid "Actions"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:377
+msgid "Preview"
+msgstr ""
+
+#. translators: 1: contact count, 2: current count
+#: includes/admin/class-phonebook-screen.php:383
+#, php-format
+msgid "Replace the current %2$s contacts with the %1$s contacts in this snapshot? The current list is snapshotted first."
+msgstr ""
+
+#. translators: 1: contact count, 2: current count
+#: includes/admin/class-phonebook-screen.php:383
+msgid "Restore"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:390
+msgid "Delete this snapshot?"
+msgstr ""
+
+#. translators: %s: date
+#: includes/admin/class-phonebook-screen.php:402
+#, php-format
+msgid "Snapshot from %s"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:404
+msgid "This snapshot is empty."
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:407
+msgid "Notes"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:415
+msgid "Only the first 1,000 contacts are shown."
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:435
+msgid "Feed address"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:436
+msgid "Enter this address in the handset's remote phonebook settings (on Yealink phones usually Directory > Remote Phone Book, or the web interface under Directory > Remote Phone Book). Menu names, the number of remote phonebooks and refresh options vary by model and firmware."
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:437
+msgid "Feed URL (plain permalinks are active, so the fallback form is used)"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:444
+#: includes/admin/class-phonebook-screen.php:460
+msgid "Alternative address forms"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:445
+msgid "If a handset or firmware does not pass the ?key= query string, use the path form, which keeps the site-specific .xml filename:"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:446
+msgid "Path-token feed URL"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:451
+#: includes/admin/class-phonebook-screen.php:461
+msgid "Fallback that works without pretty permalinks:"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:452
+#: includes/admin/class-phonebook-screen.php:462
+msgid "Fallback feed URL"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:469
+msgid "The feed is served by WordPress on request; the handset decides when to fetch it. A request logged here shows the phone reached WordPress, not that it imported the contacts. Responses served by a page cache or CDN may not be logged. HTTPS is preferred; whether a given model accepts your certificate must be verified on the handset."
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:473
+msgid "Access"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:479
+msgid "Who can read this feed"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:480
+msgid "Secret URL: requests must include this phonebook's private key. Treat the address as a password."
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:481
+msgid "Public: anyone who can reach the site can read the contacts. Only use when the handsets cannot send a key."
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:484
+msgid "XML prompt text"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:486
+msgid "The <Prompt> element. Leave as \"Prompt\" unless you know your handsets use it."
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:488
+msgid "Feed enabled (when unticked the address returns 404 and exposes nothing)"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:489
+msgid "Save access settings"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:494
+msgid "Private key"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:495
+msgid "Key (masked):"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:500
+msgid "Generate a new key? Every handset configured with the current address will stop receiving this phonebook until it is updated with the new address."
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:500
+msgid "Generate a new key"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:502
+msgid "Rotating the key immediately invalidates the previous address, including any cached copies. Keys are generated with a cryptographic random source and compared in constant time."
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:507
+msgid "Last request seen"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:510
+msgid "When"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:512
+msgid "Client"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:512
+msgid "(no user agent)"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:515
+msgid "WordPress has not seen a request for this feed yet."
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:519
+msgid "Caching and security plugins"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:520
+msgid "Exclude the feed path from page caches, CDNs and firewall rules so that key checks and rotation always reach WordPress:"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:522
+msgid "Protected feeds are sent with Cache-Control: private; public feeds may be cached by shared caches until they revalidate."
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:538
+msgid "200 – phonebook delivered"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:540
+msgid "304 – not modified since the client's last copy"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:542
+msgid "403 – rejected: missing or wrong key"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:544
+msgid "404 – feed disabled"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:546
+msgid "405 – unsupported request method"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:548
+msgid "500 – feed could not be generated"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:562
+msgid "Details"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:572
+msgid "Shown as the XML <Title>. Changing it does not change the feed address."
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:580
+msgid "Save details"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:585
+msgid "Feed file name"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:586
+msgid "The file name is part of every handset's configured address. Change it only when necessary: phones configured with the old address will stop receiving this phonebook until they are updated."
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:592
+msgid "File name (without .xml)"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:594
+msgid "Lowercase letters, numbers and single dashes only."
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:596
+msgid "I understand configured phones must be updated with the new address."
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:597
+msgid "Change the feed file name? Phones using the old address will stop receiving this phonebook."
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:597
+msgid "Change file name"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:602
+#: includes/admin/class-phonebook-screen.php:612
+msgid "Delete phonebook"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:603
+msgid "Permanently deletes this phonebook, all of its contacts, snapshots and staged imports. The feed address stops working immediately. This cannot be undone."
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:609
+msgid "Type the site name to confirm"
+msgstr ""
+
+#: includes/admin/class-phonebook-screen.php:612
+msgid "Delete this phonebook and all of its data?"
+msgstr ""
+
+#: includes/admin/class-phonebooks-list-table.php:46
+msgid "Feed file"
+msgstr ""
+
+#: includes/admin/class-phonebooks-list-table.php:102
+msgid "No phonebooks match your search."
+msgstr ""
+
+#. translators: %s: Add Phonebook link
+#: includes/admin/class-phonebooks-list-table.php:107
+#, php-format
+msgid "No phonebooks yet. %s to create the first one, then import a CSV or add contacts."
+msgstr ""
+
+#: includes/admin/class-phonebooks-list-table.php:108
+msgid "Add a phonebook"
+msgstr ""
+
+#: includes/admin/class-phonebooks-list-table.php:121
+msgid "Manage"
+msgstr ""
+
+#. translators: %s: site name
+#: includes/admin/class-phonebooks-list-table.php:125
+#, php-format
+msgid "Manage %s"
+msgstr ""
+
+#: includes/admin/class-phonebooks-list-table.php:139
+#: includes/admin/class-settings-screen.php:57
+msgid "Public"
+msgstr ""
+
+#: includes/admin/class-phonebooks-list-table.php:139
+msgid "Secret URL"
+msgstr ""
+
+#: includes/admin/class-phonebooks-list-table.php:161
+msgid "Enabled"
+msgstr ""
+
+#: includes/admin/class-phonebooks-list-table.php:163
+msgid "Disabled"
+msgstr ""
+
+#: includes/admin/class-settings-screen.php:49
+msgid "Defaults for new phonebooks"
+msgstr ""
+
+#: includes/admin/class-settings-screen.php:52
+#: includes/admin/class-settings-screen.php:55
+msgid "Default feed access"
+msgstr ""
+
+#: includes/admin/class-settings-screen.php:56
+msgid "Secret URL (recommended)"
+msgstr ""
+
+#: includes/admin/class-settings-screen.php:58
+msgid "Applies to phonebooks created from now on. Existing phonebooks keep their own setting."
+msgstr ""
+
+#: includes/admin/class-settings-screen.php:63
+msgid "Imports and retention"
+msgstr ""
+
+#: includes/admin/class-settings-screen.php:66
+msgid "Maximum rows per import"
+msgstr ""
+
+#: includes/admin/class-settings-screen.php:67
+msgid "Files with more rows are rejected before processing. The default of 5,000 has been tested; larger values need more PHP memory and time."
+msgstr ""
+
+#: includes/admin/class-settings-screen.php:70
+msgid "Maximum upload size (KB)"
+msgstr ""
+
+#. translators: %s: PHP upload limit
+#: includes/admin/class-settings-screen.php:71
+#, php-format
+msgid "Also limited by the server's PHP upload limit (currently %s)."
+msgstr ""
+
+#: includes/admin/class-settings-screen.php:74
+msgid "Keep unfinished imports for (minutes)"
+msgstr ""
+
+#: includes/admin/class-settings-screen.php:75
+msgid "Uploaded files and previews that are not applied are deleted after this time."
+msgstr ""
+
+#: includes/admin/class-settings-screen.php:78
+msgid "Snapshots kept per phonebook"
+msgstr ""
+
+#: includes/admin/class-settings-screen.php:79
+msgid "Older snapshots are removed automatically."
+msgstr ""
+
+#: includes/admin/class-settings-screen.php:82
+msgid "Delivery"
+msgstr ""
+
+#: includes/admin/class-settings-screen.php:85
+msgid "Cache max-age (seconds)"
+msgstr ""
+
+#: includes/admin/class-settings-screen.php:86
+msgid "Sent in the Cache-Control header. 0 (default) asks clients to revalidate every time using ETag / Last-Modified. Protected feeds are always marked private."
+msgstr ""
+
+#: includes/admin/class-settings-screen.php:89
+msgid "Uninstall"
+msgstr ""
+
+#: includes/admin/class-settings-screen.php:92
+msgid "Data removal"
+msgstr ""
+
+#: includes/admin/class-settings-screen.php:94
+msgid "Delete all phonebooks, contacts, snapshots and settings when the plugin is uninstalled"
+msgstr ""
+
+#: includes/admin/class-settings-screen.php:95
+msgid "Deactivating never removes data. Uninstalling keeps data unless this box is ticked."
+msgstr ""
+
+#: includes/class-contact-repository.php:161
+msgid "A contact with exactly this name and telephone already exists in this phonebook."
+msgstr ""
+
+#: includes/class-contact-repository.php:178
+#: includes/class-contact-repository.php:228
+msgid "The contact could not be saved because of a database error."
+msgstr ""
+
+#: includes/class-contact-repository.php:209
+msgid "Another contact with exactly this name and telephone already exists in this phonebook."
+msgstr ""
+
+#: includes/class-contact-validator.php:102
+msgid "Contains text that is not valid UTF-8. Save the file as UTF-8 and try again."
+msgstr ""
+
+#: includes/class-contact-validator.php:107
+msgid "Name is required."
+msgstr ""
+
+#. translators: %d: maximum length
+#: includes/class-contact-validator.php:110
+#, php-format
+msgid "Name is longer than %d characters."
+msgstr ""
+
+#: includes/class-contact-validator.php:112
+msgid "Name contains control characters that cannot be represented in XML. Remove them and try again."
+msgstr ""
+
+#: includes/class-contact-validator.php:116
+msgid "Telephone is required."
+msgstr ""
+
+#. translators: %d: maximum length
+#: includes/class-contact-validator.php:119
+#, php-format
+msgid "Telephone is longer than %d characters."
+msgstr ""
+
+#: includes/class-contact-validator.php:121
+msgid "Telephone contains control characters or line breaks that cannot be represented in XML."
+msgstr ""
+
+#: includes/class-contact-validator.php:123
+msgid "Telephone contains characters other than digits, +, *, #, brackets, dashes, dots and spaces. The handset may not be able to dial it."
+msgstr ""
+
+#. translators: %d: maximum length
+#: includes/class-contact-validator.php:128
+#, php-format
+msgid "Notes are longer than %d characters."
+msgstr ""
+
+#: includes/class-contact-validator.php:130
+msgid "Notes contain control characters."
+msgstr ""
+
+#: includes/class-diagnostics.php:30
+msgid "PHP version"
+msgstr ""
+
+#: includes/class-diagnostics.php:31
+msgid "WordPress version"
+msgstr ""
+
+#. translators: %s: PHP extension name
+#: includes/class-diagnostics.php:35
+#, php-format
+msgid "PHP extension: %s"
+msgstr ""
+
+#. translators: %s: PHP extension name
+#: includes/class-diagnostics.php:35
+msgid "loaded"
+msgstr ""
+
+#. translators: %s: PHP extension name
+#: includes/class-diagnostics.php:35
+msgid "missing – required"
+msgstr ""
+
+#: includes/class-diagnostics.php:37
+msgid "PHP extension: intl (optional)"
+msgstr ""
+
+#: includes/class-diagnostics.php:37
+msgid "loaded – non-Latin site names get transliterated file names"
+msgstr ""
+
+#: includes/class-diagnostics.php:37
+msgid "not loaded – non-Latin site names fall back to \"phonebook-N\" file names"
+msgstr ""
+
+#: includes/class-diagnostics.php:39
+msgid "Database"
+msgstr ""
+
+#. translators: %s: table name
+#: includes/class-diagnostics.php:43
+#: includes/class-diagnostics.php:45
+#, php-format
+msgid "Table %s"
+msgstr ""
+
+#. translators: %s: table name
+#: includes/class-diagnostics.php:43
+msgid "missing – deactivate and reactivate the plugin"
+msgstr ""
+
+#. translators: %s: engine
+#: includes/class-diagnostics.php:45
+#, php-format
+msgid "%s – imports are not atomic without InnoDB"
+msgstr ""
+
+#: includes/class-diagnostics.php:48
+msgid "Schema version"
+msgstr ""
+
+#: includes/class-diagnostics.php:51
+msgid "Permalinks"
+msgstr ""
+
+#. translators: %s: path
+#: includes/class-diagnostics.php:51
+#, php-format
+msgid "pretty permalinks active – feeds use /%s/{site}.xml"
+msgstr ""
+
+#. translators: %s: path
+#: includes/class-diagnostics.php:51
+msgid "plain permalinks – feeds use the ?spb_feed= fallback address (shown on each phonebook)"
+msgstr ""
+
+#: includes/class-diagnostics.php:61
+msgid "Feed rewrite rules"
+msgstr ""
+
+#: includes/class-diagnostics.php:61
+msgid "registered"
+msgstr ""
+
+#: includes/class-diagnostics.php:61
+msgid "missing – visit Settings > Permalinks and click Save to rebuild them"
+msgstr ""
+
+#: includes/class-diagnostics.php:63
+msgid "Feed path conflict"
+msgstr ""
+
+#. translators: %s: path
+#: includes/class-diagnostics.php:63
+#, php-format
+msgid "a page with the slug \"%s\" exists; feed rules take priority but check the page still works"
+msgstr ""
+
+#. translators: %s: path
+#: includes/class-diagnostics.php:63
+msgid "none"
+msgstr ""
+
+#: includes/class-diagnostics.php:65
+msgid "Site address"
+msgstr ""
+
+#: includes/class-diagnostics.php:65
+msgid "HTTPS is recommended; verify your handsets trust the certificate"
+msgstr ""
+
+#: includes/class-diagnostics.php:66
+msgid "Object cache"
+msgstr ""
+
+#: includes/class-diagnostics.php:66
+msgid "persistent object cache in use – rendered feeds are cached and validated by revision"
+msgstr ""
+
+#: includes/class-diagnostics.php:66
+msgid "no persistent object cache – feeds are rendered per request (fine for typical sizes)"
+msgstr ""
+
+#: includes/class-diagnostics.php:67
+msgid "Housekeeping event"
+msgstr ""
+
+#: includes/class-diagnostics.php:67
+msgid "scheduled (removes expired staged imports)"
+msgstr ""
+
+#: includes/class-diagnostics.php:67
+msgid "not scheduled – reactivate the plugin"
+msgstr ""
+
+#: includes/class-diagnostics.php:68
+msgid "Upload limit"
+msgstr ""
+
+#. translators: 1: count, 2: contacts
+#: includes/class-diagnostics.php:71
+#, php-format
+msgid "%1$s phonebooks, %2$s contacts in total"
+msgstr ""
+
+#. translators: %s: site name
+#: includes/class-diagnostics.php:79
+#: includes/class-diagnostics.php:81
+#, php-format
+msgid "XML for \"%s\""
+msgstr ""
+
+#. translators: 1: entries, 2: bytes
+#: includes/class-diagnostics.php:79
+#, php-format
+msgid "valid, %1$s entries, %2$s"
+msgstr ""
+
+#. translators: 1: entries, 2: bytes
+#: includes/class-diagnostics.php:79
+msgid "does not parse"
+msgstr ""
+
+#. translators: %s: error message
+#: includes/class-diagnostics.php:126
+#, php-format
+msgid "The server could not request its own feed: %s. Loopback requests may be blocked on this host; this does not necessarily mean phones cannot reach it."
+msgstr ""
+
+#: includes/class-diagnostics.php:134
+msgid "The server fetched its own feed successfully (HTTP 200, XML). This confirms routing and access settings on the server; it does not prove a handset on another network can reach it."
+msgstr ""
+
+#. translators: 1: HTTP status, 2: content type
+#: includes/class-diagnostics.php:140
+#, php-format
+msgid "Unexpected response: HTTP %1$d, content type \"%2$s\". If the status is 404 with pretty permalinks, re-save Settings > Permalinks. If a page cache or security plugin answered, exclude the feed path."
+msgstr ""
+
+#: includes/class-phonebook-repository.php:185
+msgid "Site name is required."
+msgstr ""
+
+#: includes/class-phonebook-repository.php:188
+msgid "Site name contains characters that cannot be represented in XML."
+msgstr ""
+
+#. translators: %d: maximum length
+#: includes/class-phonebook-repository.php:192
+#, php-format
+msgid "Site name is longer than %d characters."
+msgstr ""
+
+#. translators: %s: site name
+#: includes/class-phonebook-repository.php:196
+#, php-format
+msgid "A phonebook named \"%s\" already exists. Site names must be unique."
+msgstr ""
+
+#: includes/class-phonebook-repository.php:213
+msgid "Prompt contains invalid characters or is too long."
+msgstr ""
+
+#: includes/class-phonebook-repository.php:260
+#: includes/class-phonebook-repository.php:312
+msgid "The phonebook could not be saved because of a database error."
+msgstr ""
+
+#: includes/class-phonebook-repository.php:331
+msgid "The URL name may only contain lowercase letters, numbers and single dashes, and may not start or end with a dash."
+msgstr ""
+
+#. translators: %s: slug
+#: includes/class-phonebook-repository.php:335
+#, php-format
+msgid "The URL name \"%s\" is already used by another phonebook."
+msgstr ""
+
+#: includes/class-phonebook-repository.php:348
+msgid "The URL name could not be changed because of a database error."
+msgstr ""
+
+#: includes/class-revision-repository.php:34
+msgid "Before replace import"
+msgstr ""
+
+#: includes/class-revision-repository.php:35
+msgid "Before bulk delete"
+msgstr ""
+
+#: includes/class-revision-repository.php:36
+msgid "Before clearing phonebook"
+msgstr ""
+
+#: includes/class-revision-repository.php:37
+msgid "Before restoring a snapshot"
+msgstr ""
+
+#: includes/class-revision-repository.php:38
+msgid "Manual snapshot"
+msgstr ""
+
+#: includes/class-revision-repository.php:200
+msgid "The snapshot could not be restored; the phonebook was left unchanged."
+msgstr ""
+
+#: includes/csv/class-csv-parser.php:75
+msgid "The file is not valid UTF-8 text. In your spreadsheet choose \"Save As\" and pick \"CSV UTF-8 (Comma delimited)\", or select the legacy encoding the file was saved in below. Importing it as-is would corrupt accented names."
+msgstr ""
+
+#: includes/csv/class-csv-parser.php:89
+msgid "The file could not be converted from the selected encoding."
+msgstr ""
+
+#: includes/csv/class-csv-parser.php:100
+msgid "The file contains binary data and does not look like a CSV text file."
+msgstr ""
+
+#: includes/csv/class-csv-parser.php:168
+msgid "Could not open a temporary stream for parsing."
+msgstr ""
+
+#. translators: %d: maximum number of rows
+#: includes/csv/class-csv-parser.php:198
+#, php-format
+msgid "The file has more than %d rows. Split it into smaller files or raise the limit in Phonebooks > Settings."
+msgstr ""
+
+#: includes/import/class-import-committer.php:38
+msgid "This import is no longer available. It may have expired or already been applied. Upload the file again."
+msgstr ""
+
+#: includes/import/class-import-committer.php:41
+msgid "Preview the import before applying it."
+msgstr ""
+
+#: includes/import/class-import-committer.php:48
+msgid "Tick the confirmation box to acknowledge that existing contacts will be removed."
+msgstr ""
+
+#: includes/import/class-import-committer.php:71
+msgid "This import has already been applied."
+msgstr ""
+
+#: includes/import/class-import-committer.php:74
+msgid "The phonebook was changed after this preview was generated. Review a fresh preview before applying the import."
+msgstr ""
+
+#: includes/import/class-import-committer.php:112
+msgid "The import failed because of a database error and was rolled back. The phonebook was left unchanged."
+msgstr ""
+
+#: includes/import/class-import-planner.php:79
+msgid "Choose which column holds the Name and which holds the Telephone."
+msgstr ""
+
+#: includes/import/class-import-planner.php:88
+msgid "Name and Telephone cannot come from the same column."
+msgstr ""
+
+#: includes/import/class-import-planner.php:197
+msgid "The row has fewer columns than the mapping requires."
+msgstr ""
+
+#. translators: %d: row number
+#: includes/import/class-import-planner.php:213
+#, php-format
+msgid "Exact duplicate of row %d; skipped."
+msgstr ""
+
+#: includes/import/class-import-planner.php:247
+msgid "The file contains no contact rows."
+msgstr ""
+
+#. translators: %d: number of invalid rows
+#: includes/import/class-import-planner.php:252
+#, php-format
+msgid "%d row is invalid. Fix the file, or tick \"Import valid rows only\" to skip it."
+msgid_plural "%d rows are invalid. Fix the file, or tick \"Import valid rows only\" to skip them."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/import/class-import-planner.php:257
+msgid "A replace import must leave at least one contact. To empty a phonebook, use \"Clear phonebook\" on the Contacts tab instead."
+msgstr ""
+
+#: includes/import/class-import-planner.php:260
+msgid "Nothing to import: every valid row already exists in this phonebook."
+msgstr ""
+
+#: includes/import/class-import-planner.php:267
+msgid "The XML title cannot be used as the phonebook name:"
+msgstr ""
+
+#: includes/import/class-import-staging.php:68
+msgid "The upload could not be staged because of a database error."
+msgstr ""
+
+#: includes/xml/class-yealink-xml-parser.php:44
+msgid "The XML file is empty."
+msgstr ""
+
+#: includes/xml/class-yealink-xml-parser.php:47
+msgid "The XML file is not valid UTF-8. Save it as UTF-8 and try again."
+msgstr ""
+
+#: includes/xml/class-yealink-xml-parser.php:50
+msgid "The XML file contains a document type or entity declaration, which is not allowed for security reasons."
+msgstr ""
+
+#. translators: %d: maximum number of entries
+#: includes/xml/class-yealink-xml-parser.php:57
+#, php-format
+msgid "The XML file has more than %d entries. Split it into smaller files or raise the limit in Phonebooks > Settings."
+msgstr ""
+
+#: includes/xml/class-yealink-xml-parser.php:87
+msgid "The XML file is malformed and could not be parsed."
+msgstr ""
+
+#: includes/xml/class-yealink-xml-parser.php:92
+msgid "The XML file contains a document type declaration, which is not allowed."
+msgstr ""
+
+#. translators: 1: expected root element, 2: found root element
+#: includes/xml/class-yealink-xml-parser.php:101
+#, php-format
+msgid "Unsupported XML structure: expected a <%1$s> root element but found <%2$s>."
+msgstr ""
+
+#. translators: %s: element name
+#: includes/xml/class-yealink-xml-parser.php:120
+#, php-format
+msgid "Ignored unexpected element <%s>."
+msgstr ""
+
+#. translators: %d: entry number
+#: includes/xml/class-yealink-xml-parser.php:143
+#, php-format
+msgid "Entry %d has more than one <Name>; only the first was used."
+msgstr ""
+
+#. translators: %d: entry number
+#: includes/xml/class-yealink-xml-parser.php:150
+#, php-format
+msgid "Entry %d has more than one <Telephone>; only the first was used (additional numbers are not part of the current compatibility profile)."
+msgstr ""
+
+#. translators: 1: entry number, 2: element name
+#: includes/xml/class-yealink-xml-parser.php:154
+#, php-format
+msgid "Entry %1$d: ignored unexpected element <%2$s>."
+msgstr ""

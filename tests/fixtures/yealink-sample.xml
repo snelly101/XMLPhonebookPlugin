@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XXXIPPhoneDirectory clearlight="true">
+  <Title>Phonelist</Title>
+  <Prompt>Prompt</Prompt>
+  <DirectoryEntry>
+    <Name>Example Reception</Name>
+    <Telephone>1001</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>Support Engineer</Name>
+    <Telephone>0001</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>Support Engineer</Name>
+    <Telephone>1000</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>Example External Contact</Name>
+    <Telephone>+441234567890</Telephone>
+  </DirectoryEntry>
+</XXXIPPhoneDirectory>
