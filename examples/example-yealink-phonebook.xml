@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XXXIPPhoneDirectory clearlight="true">
+  <Title>Riverside Heights</Title>
+  <Prompt>Prompt</Prompt>
+  <DirectoryEntry>
+    <Name>Riverside Reception</Name>
+    <Telephone>3001</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>Support Engineer</Name>
+    <Telephone>0001</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>Support Engineer</Name>
+    <Telephone>1000</Telephone>
+  </DirectoryEntry>
+  <DirectoryEntry>
+    <Name>External Taxi</Name>
+    <Telephone>+441234567890</Telephone>
+  </DirectoryEntry>
+</XXXIPPhoneDirectory>

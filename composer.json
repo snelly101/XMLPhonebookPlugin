@@ -1,0 +1,32 @@
+{
+    "name": "snelly101/site-phonebooks",
+    "description": "Site Phonebooks: manage multiple site-specific phonebooks in WordPress and serve them as Yealink-compatible XML feeds.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": ">=7.4",
+        "ext-dom": "*",
+        "ext-xmlwriter": "*",
+        "ext-mbstring": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6",
+        "yoast/phpunit-polyfills": "^1.1"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SitePhonebooks\\Tests\\Unit\\": "tests/unit/",
+            "SitePhonebooks\\Tests\\Integration\\": "tests/integration/"
+        }
+    },
+    "scripts": {
+        "test:unit": "phpunit --testsuite unit",
+        "test:integration": "phpunit --testsuite integration",
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": false
+    }
+}
